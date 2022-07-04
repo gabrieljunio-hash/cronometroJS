@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronometro</title>
+</head>
+<body>
+    
+    <form name="form_main" id="form_main">
+
+        <h1>Cronometro</h1>
+        <div id="contador">
+            <span id="hour">00</span> :
+            <span id="minute">00</span> :
+            <span id="second">00</span> :
+            <span id="millisecond">000</span>
+        </div>
+
+        <div id="opcoes">
+            <button type="button" id="start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-skip-start" viewBox="0 0 16 16">
+                    <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z"/>
+                  </svg>    <p>start</p>
+            </button>
+            <button type="button" id="pause">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                  </svg> <p>pause</p>
+            </button>
+            <button type="button" id="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg> <br><p>reset</p>
+            </button>
+            
+        </div>
+    </form>
+    
+    <script src="scrypt.js"></script>
+</body>
+</html>
